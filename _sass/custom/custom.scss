@@ -1,0 +1,150 @@
+// Personnalisations E-Sk8FR
+
+// Variables
+$esk8-blue: #0066CC;
+$esk8-red: #FF0000;
+
+// Logo dans le header
+.site-header {
+  .site-logo {
+    max-height: 45px;
+    margin-right: 0.5rem;
+  }
+}
+
+// Amélioration de la page d'accueil
+.home {
+  h1 {
+    color: $body-heading-color;
+    margin-bottom: 0.5rem;
+  }
+  
+  .fs-6.fw-300 {
+    color: $esk8-blue;
+    margin-bottom: 2rem;
+  }
+}
+
+// Sections de la page d'accueil
+.home h3 {
+  color: $esk8-blue;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+// Boutons personnalisés
+.btn-primary {
+  background-color: $esk8-blue;
+  border-color: $esk8-blue;
+  
+  &:hover {
+    background-color: darken($esk8-blue, 10%);
+    border-color: darken($esk8-blue, 10%);
+  }
+}
+
+// Navigation améliorée
+.nav-list {
+  .nav-list-item {
+    .nav-list-link {
+      &:hover {
+        background-color: rgba($esk8-blue, 0.05);
+      }
+      
+      &.active {
+        border-left: 3px solid $esk8-red;
+        padding-left: calc(1rem - 3px);
+        font-weight: 600;
+        color: $esk8-blue;
+      }
+    }
+  }
+}
+
+// Cards/Boxes personnalisées
+.highlight-box {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  background-color: #f8f9fa;
+  
+  &.blue {
+    border-color: $esk8-blue;
+    background-color: rgba($esk8-blue, 0.03);
+    border-left: 4px solid $esk8-blue;
+  }
+  
+  &.red {
+    border-color: $esk8-red;
+    background-color: rgba($esk8-red, 0.03);
+    border-left: 4px solid $esk8-red;
+  }
+}
+
+// Tables améliorées
+table {
+  thead {
+    th {
+      background-color: rgba($esk8-blue, 0.05);
+      color: $body-heading-color;
+      font-weight: 600;
+    }
+  }
+  
+  tbody tr:hover {
+    background-color: rgba($esk8-blue, 0.02);
+  }
+}
+
+// Code blocks
+pre.highlight {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+// Breadcrumbs
+.breadcrumb-nav {
+  .breadcrumb-nav-list-item {
+    a:hover {
+      color: $esk8-blue;
+    }
+  }
+}
+
+// Footer
+.site-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 2px solid $esk8-blue;
+  
+  small {
+    color: #666;
+  }
+}
+
+// Responsive
+@media (max-width: 50rem) {
+  .site-header .site-logo {
+    max-height: 35px;
+  }
+}
+
+// Animations
+.btn {
+  transition: all 0.2s ease;
+}
+
+.nav-list-link {
+  transition: all 0.15s ease;
+}
+
+// Print styles
+@media print {
+  .site-header,
+  .site-nav,
+  .site-footer,
+  .breadcrumb-nav {
+    display: none !important;
+  }
+}

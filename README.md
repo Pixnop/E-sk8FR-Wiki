@@ -1,24 +1,160 @@
-# just-the-docs-template
+# E-Sk8FR Wiki
 
-This is a *bare-minimum* template to create a [Jekyll] site that:
+![E-Sk8FR Logo](assets/images/logo.png)
 
-- uses the [Just the Docs] theme;
-- can be built and published on [GitHub Pages];
-- can be built and previewed locally, and published on other platforms.
+Wiki communautaire francophone dédié au skateboard électrique.
 
-More specifically, the created site:
+## 🎯 But du projet
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem;
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages.
+Le E-Sk8FR Wiki a pour objectif de :
 
-To get started with creating a site, simply:
+- **Centraliser** les connaissances sur le skateboard électrique en français
+- **Aider** les débutants à se lancer en toute sécurité
+- **Partager** l'expertise de la communauté française du e-skate
+- **Documenter** les aspects techniques, légaux et pratiques
+- **Promouvoir** une pratique responsable et sécurisée
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+## 📚 Contenu du wiki
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](#hosting-your-docs-from-an-existing-project-repo).
+- **Pour débuter** : Guides essentiels, choix du matériel, apprentissage
+- **Matériel** : Comparatifs, tests, avis sur les boards du marché
+- **DIY** : Construire son propre skateboard électrique
+- **Sécurité** : Équipements, bonnes pratiques, législation française
+- **Maintenance** : Entretien, réparations, optimisations
 
-After completing the creation of your new site on GitHub, update it as needed:
+## 🤝 Comment contribuer
+
+### Qui peut contribuer ?
+
+Tout le monde ! Que vous soyez :
+- Débutant avec des questions pertinentes
+- Rider expérimenté avec des conseils à partager
+- Bricoleur DIY avec des tutoriels
+- Expert en réglementation ou sécurité
+
+### Types de contributions
+
+1. **Contenu** :
+   - Rédiger de nouveaux articles
+   - Améliorer les articles existants
+   - Ajouter des images et schémas
+   - Corriger les erreurs
+
+2. **Technique** :
+   - Améliorer le design
+   - Optimiser la navigation
+   - Corriger des bugs
+   - Proposer de nouvelles fonctionnalités
+
+### Guide de contribution
+
+1. **Fork le repository**
+   ```bash
+   git clone https://github.com/Pixnop/E-sk8FR-Wiki.git
+   cd E-sk8FR-Wiki
+   ```
+
+2. **Créez une branche**
+   ```bash
+   git checkout -b ma-contribution
+   ```
+
+3. **Faites vos modifications**
+   - Respectez la structure existante
+   - Utilisez un français clair et accessible
+   - Ajoutez des images si nécessaire
+   - Vérifiez l'orthographe
+
+4. **Testez localement**
+   ```bash
+   bundle install
+   bundle exec jekyll serve
+   ```
+   Visitez http://localhost:4000
+
+5. **Committez et pushez**
+   ```bash
+   git add .
+   git commit -m "Description claire de vos changements"
+   git push origin ma-contribution
+   ```
+
+6. **Créez une Pull Request**
+   - Décrivez vos changements
+   - Expliquez pourquoi ils sont utiles
+   - Mentionnez les issues liées
+
+### 📝 Style d'écriture
+
+- **Clarté** : Écrivez de manière simple et compréhensible
+- **Structure** : Utilisez des titres et sous-titres
+- **Objectivité** : Restez factuel, évitez les opinions personnelles
+- **Sources** : Citez vos sources quand nécessaire
+- **Images** : Ajoutez des visuels pour clarifier
+
+### 🛠️ Développement local
+
+#### Prérequis
+
+- Ruby 2.7+
+- Bundler
+- Git
+
+#### Installation
+
+```bash
+# Cloner le repository
+git clone https://github.com/Pixnop/E-sk8FR-Wiki.git
+cd E-sk8FR-Wiki
+
+# Installer les dépendances
+bundle install
+
+# Lancer le serveur local
+bundle exec jekyll serve
+```
+
+Le wiki sera accessible sur http://localhost:4000
+
+#### Structure du projet
+
+```
+E-sk8FR-Wiki/
+├── _config.yml      # Configuration Jekyll
+├── index.md         # Page d'accueil
+├── docs/            # Contenu du wiki
+│   ├── debutant/    # Guides pour débuter
+│   ├── materiel/    # Section matériel
+│   ├── diy/         # Tutoriels DIY
+│   ├── securite/    # Sécurité et législation
+│   └── maintenance/ # Entretien
+├── _sass/           # Styles personnalisés
+└── assets/          # Images et ressources
+```
+
+## 📜 Licence
+
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+## 🔗 Liens utiles
+
+- [Forum E-Sk8FR](https://www.e-sk8.fr)
+- [Discord E-Sk8FR](https://discord.gg/4g9rtnGj5m)
+- [GitHub du projet](https://github.com/Pixnop/E-sk8FR-Wiki)
+- [Documentation Jekyll](https://jekyllrb.com/docs/)
+
+## 💬 Contact
+
+Pour toute question :
+- Ouvrez une [issue GitHub](https://github.com/Pixnop/E-sk8FR-Wiki/issues)
+- Rejoignez le [forum E-Sk8FR](https://www.e-sk8.fr)
+- Venez discuter sur [Discord](https://discord.gg/4g9rtnGj5m)
+
+---
+
+<p align="center">
+  Fait avec ❤️ par la communauté E-Sk8FR
+</p>
 
 ## Replace the content of the template pages
 
